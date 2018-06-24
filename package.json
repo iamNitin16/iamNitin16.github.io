@@ -1,0 +1,11 @@
+{
+  "name": "iamnitin16.github.io",
+  "version": "1.0.0",
+  "description": "This repository is a portfolio for my github account.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "iamNitin16",
+  "license": "MIT"
+}
