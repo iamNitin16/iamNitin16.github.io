@@ -9,7 +9,7 @@
     "build": "webpack --mode production",
     "start": "webpack --mode development && node server.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "author": "iamNitin16",
   "license": "MIT",
