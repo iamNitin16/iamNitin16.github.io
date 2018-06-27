@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.scss';
+import './scss/index.scss';
 
 import ParticlesBackground from './Components/particles-background.js';
 
