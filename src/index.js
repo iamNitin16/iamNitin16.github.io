@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './css/index.css';
+import './css/index.scss';
 
-ReactDOM.render(<h1> Its up and running </h1>, document.getElementById("root"));
+import ParticlesBackground from './Components/particles-background.js';
+
+ReactDOM.render(<ParticlesBackground />, document.getElementById("root"));
