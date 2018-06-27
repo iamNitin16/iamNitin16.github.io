@@ -2,24 +2,32 @@ import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 
 class ParticlesBackground extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {particles: {}};
+  }
+
+  componentWillMount() {
+    fetch("../../config/particlesjs-config.json").then((resp) => resp.json()).then((particles) => {
+      this.setState({
+        particles: particles
+      });
+    });
+  }
+
   render() {
+
     return (
-      <Particles
-      params={{
-              particles: {
-                line_linked: {
-                  shadow: {
-                    enable: true,
-                    color: "#3CA9D1",
-                    blur: 5
-                  }
-                }
-              }
-            }}
-            style={{
-              width: '100%'
-            }}
-      />
+      <div>
+        <Particles className="particles"
+          params={this.state.particles}
+        />
+        <div>
+          <span className="description">
+            Hello, I am Nitin!
+          </span>
+        </div>
+      </div>
     );
   }
 }
