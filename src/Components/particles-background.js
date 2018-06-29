@@ -8,7 +8,7 @@ class ParticlesBackground extends Component {
   }
 
   componentWillMount() {
-    fetch("../../config/bubble-particles-config.json").then((resp) => resp.json()).then((particles) => {
+    fetch("../../config/default-particles-config.json").then((resp) => resp.json()).then((particles) => {
       this.setState({
         particles: particles
       });
