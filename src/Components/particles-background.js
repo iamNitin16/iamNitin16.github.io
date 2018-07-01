@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import particles from '../../config/default-particles-config.json';
 import Particles from 'react-particles-js';
 
 class ParticlesBackground extends Component {
@@ -8,11 +9,9 @@ class ParticlesBackground extends Component {
   }
 
   componentWillMount() {
-    fetch("../../config/default-particles-config.json").then((resp) => resp.json()).then((particles) => {
-      this.setState({
-        particles: particles
-      });
-    });
+    this.setState({
+      particles: particles
+    })
   }
 
   render() {
